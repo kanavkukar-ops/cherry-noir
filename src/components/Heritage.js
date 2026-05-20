@@ -40,7 +40,7 @@ export function render() {
         <div class="heritage__image-col" data-parallax="image">
           <img
             class="heritage__image"
-            src="/src/assets/images/heritage-1.jpg"
+            src="/images/heritage-1.jpg"
             alt="Dark moody cherry photography — editorial lighting"
             loading="lazy"
             decoding="async"
@@ -81,7 +81,7 @@ export function render() {
         <div class="heritage__image-col" data-parallax="image">
           <img
             class="heritage__image"
-            src="/src/assets/images/heritage-2.jpg"
+            src="/images/heritage-2.jpg"
             alt="Mountain landscape — the mineral spring source"
             loading="lazy"
             decoding="async"

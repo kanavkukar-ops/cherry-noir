@@ -11,7 +11,7 @@ export function render() {
       <div class="hero__photo-wrap" aria-hidden="true">
         <img
           class="hero__photo"
-          src="/src/assets/images/hero-bg.jpg"
+          src="/images/hero-bg.jpg"
           alt=""
           role="presentation"
           fetchpriority="high"

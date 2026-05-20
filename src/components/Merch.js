@@ -11,7 +11,7 @@ const products = [
     desc: 'Six cans of Original, housed in a matte-black box with letterpress branding. Tissue-wrapped. Sealed with a wax Cherry Noir stamp. Arrives like a gift because it is.',
     price: '£36',
     cta: 'Add to Collection',
-    photo: '/src/assets/images/merch-pack.jpg',
+    photo: '/images/merch-pack.jpg',
     photoAlt: 'Dark luxury product packaging — matte black box',
   },
   {
@@ -21,7 +21,7 @@ const products = [
     desc: 'Two hand-blown crystal-style glasses, etched with the Cherry Noir crest. Designed for the pour you actually deserve. Weight, form, clarity — each considered.',
     price: '£95',
     cta: 'Add to Collection',
-    photo: '/src/assets/images/merch-glass.jpg',
+    photo: '/images/merch-glass.jpg',
     photoAlt: 'Crystal glasses on a dark surface — elegant and minimal',
   },
   {
@@ -31,7 +31,7 @@ const products = [
     desc: 'Monthly drops delivered to your door. First access to limited editions. Founding Member pricing locked for life. The quiet way to never run out.',
     price: '£28 / mo',
     cta: 'Become a Founding Member',
-    photo: '/src/assets/images/merch-sub.jpg',
+    photo: '/images/merch-sub.jpg',
     photoAlt: 'Luxury subscription box — dark flat lay product photography',
   },
 ];

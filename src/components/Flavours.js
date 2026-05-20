@@ -11,7 +11,7 @@ const variants = [
     number: '01',
     descriptor: 'The benchmark. The obsession.',
     notes: ['Dark Marasca Cherry', 'Vanilla Smoke', 'Limestone Mineral Finish'],
-    photo: '/src/assets/images/flavour-original.jpg',
+    photo: '/images/flavour-original.jpg',
     photoAlt: 'Dark cherries glistening on obsidian surface',
   },
   {
@@ -20,7 +20,7 @@ const variants = [
     number: '02',
     descriptor: 'All the depth. None of the compromise.',
     notes: ['Cold-Pressed Cherry', 'Black Pepper Note', 'Zero Sugar · Zero Sacrifice'],
-    photo: '/src/assets/images/flavour-zero.jpg',
+    photo: '/images/flavour-zero.jpg',
     photoAlt: 'Dark minimal obsidian aesthetic — code on screen',
   },
   {
@@ -29,7 +29,7 @@ const variants = [
     number: '03',
     descriptor: 'Ninety days in Calvados cask. Then forgotten. Then found.',
     notes: ['Cask-Aged 90 Days', 'Dried Cherry', 'Apple Brandy Undertone'],
-    photo: '/src/assets/images/flavour-reserve.jpg',
+    photo: '/images/flavour-reserve.jpg',
     photoAlt: 'Dark aged bottles in a wine cellar — deep navy tones',
   },
   {
@@ -38,7 +38,7 @@ const variants = [
     number: '04',
     descriptor: 'Glacial cold. Cherry blossom on stone.',
     notes: ['Cherry Blossom', 'Cold Mineral', 'Citrus Ice Finish'],
-    photo: '/src/assets/images/flavour-ice.jpg',
+    photo: '/images/flavour-ice.jpg',
     photoAlt: 'Blue frost and ice — cold mineral aesthetic',
   },
 ];
