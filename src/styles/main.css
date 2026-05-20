@@ -595,9 +595,9 @@ html.lenis, html.lenis body {
 }
 
 .flavour-card--original { background: var(--cherry-silk); }
-.flavour-card--zero     { background: #0D0D0D; }
+.flavour-card--zero     { background: var(--obsidian); }
 .flavour-card--reserve  { background: var(--cosmos); }
-.flavour-card--ice      { background: #1A2A3D; }
+.flavour-card--ice      { background: var(--ice-bg); }
 
 .flavour-card__visual {
   position: relative;
@@ -664,7 +664,7 @@ html.lenis, html.lenis body {
 }
 
 .flavour-card--original .flavour-card__name { color: var(--varden); }
-.flavour-card--zero .flavour-card__name     { color: #E0E0E0; }
+.flavour-card--zero .flavour-card__name     { color: var(--ash); }
 .flavour-card--reserve .flavour-card__name  { color: var(--varden); }
 .flavour-card--ice .flavour-card__name      { color: var(--marble); }
 

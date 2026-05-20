@@ -84,6 +84,11 @@
   --z-overlay: 100;
   --z-nav:     300;
 
+  /* ─── Extended Palette (variant surfaces) ────────────── */
+  --obsidian:  #0D0D0D;   /* Zero can background */
+  --ice-bg:    #1A2A3D;   /* Ice variant background */
+  --ash:       #E0E0E0;   /* Zero variant text */
+
   /* ─── Interactive State (Explorer) ───────────────────── */
   --explorer-bg-tint: rgba(26, 10, 10, 0);
   --explorer-can-hue: 0deg;
