@@ -66,36 +66,21 @@ function initLenis() {
   return lenis;
 }
 
-/* ─── Hero Can — spring rise ──────────────────────────── */
+/* ─── Hero photo parallax ─────────────────────────────── */
 function initHeroCan() {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const can = document.getElementById('hero-can');
-  if (!can) return;
+  const photo = document.querySelector('.hero__photo');
+  if (!photo || prefersReduced) return;
 
-  if (prefersReduced) {
-    gsap.set(can, { opacity: 1, y: 0 });
-    return;
-  }
-
-  /* Spring physics entrance */
-  gsap.to(can, {
-    y:        0,
-    opacity:  1,
-    duration: 2.2,
-    ease:     'elastic.out(1, 0.5)',
-    delay:    0.9,
-  });
-
-  /* Scroll-scrubbed float: as user scrolls past hero, can continues rising */
-  ScrollTrigger.create({
-    trigger: '.hero',
-    start:   'top top',
-    end:     'bottom top',
-    scrub:   true,
-    onUpdate: self => {
-      if (!prefersReduced) {
-        gsap.set(can, { y: self.progress * -60 });
-      }
+  /* Subtle parallax on the hero photo as user scrolls down */
+  gsap.to(photo, {
+    yPercent: 15,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.hero',
+      start: 'top top',
+      end:   'bottom top',
+      scrub: true,
     },
   });
 }

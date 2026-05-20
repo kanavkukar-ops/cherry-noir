@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────
    MERCH — Editorial shop layout. Magazine spread.
-   Not a grid. Grain overlay. Text-link CTAs.
+   Real photography. Grain overlay. Text-link CTAs.
 ───────────────────────────────────────────────────── */
 
 const products = [
@@ -11,6 +11,8 @@ const products = [
     desc: 'Six cans of Original, housed in a matte-black box with letterpress branding. Tissue-wrapped. Sealed with a wax Cherry Noir stamp. Arrives like a gift because it is.',
     price: '£36',
     cta: 'Add to Collection',
+    photo: '/src/assets/images/merch-pack.jpg',
+    photoAlt: 'Dark luxury product packaging — matte black box',
   },
   {
     id: 'glass',
@@ -19,6 +21,8 @@ const products = [
     desc: 'Two hand-blown crystal-style glasses, etched with the Cherry Noir crest. Designed for the pour you actually deserve. Weight, form, clarity — each considered.',
     price: '£95',
     cta: 'Add to Collection',
+    photo: '/src/assets/images/merch-glass.jpg',
+    photoAlt: 'Crystal glasses on a dark surface — elegant and minimal',
   },
   {
     id: 'sub',
@@ -27,6 +31,8 @@ const products = [
     desc: 'Monthly drops delivered to your door. First access to limited editions. Founding Member pricing locked for life. The quiet way to never run out.',
     price: '£28 / mo',
     cta: 'Become a Founding Member',
+    photo: '/src/assets/images/merch-sub.jpg',
+    photoAlt: 'Luxury subscription box — dark flat lay product photography',
   },
 ];
 
@@ -37,7 +43,14 @@ export function render() {
       <article class="merch__item" data-product="${p.id}" aria-label="${p.name.replace('\n', ' ')}">
 
         <div class="merch__image-col">
-          <div class="merch__image-bg merch__image-bg--${p.id}" aria-hidden="true"></div>
+          <img
+            class="merch__photo"
+            src="${p.photo}"
+            alt="${p.photoAlt}"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="merch__photo-overlay merch__photo-overlay--${p.id}"></div>
         </div>
 
         <div class="merch__info">

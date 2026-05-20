@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────
-   HERITAGE — Brand story with alternating section rhythm,
-   parallax differential, cherry dividers, and timeline.
+   HERITAGE — Brand story. Alternating section rhythm.
+   Real photography. Parallax differential. Timeline.
 ───────────────────────────────────────────────────── */
 
 function cherrySVG() {
@@ -25,11 +25,7 @@ function cherryRule(color = 'currentColor') {
   return `
     <div class="heritage__cherry-rule" style="color: ${color}" aria-hidden="true">
       <div class="heritage__rule-line"></div>
-      ${cherrySVG()}
-      ${cherrySVG()}
-      ${cherrySVG()}
-      ${cherrySVG()}
-      ${cherrySVG()}
+      ${cherrySVG()}${cherrySVG()}${cherrySVG()}${cherrySVG()}${cherrySVG()}
       <div class="heritage__rule-line"></div>
     </div>
   `;
@@ -42,13 +38,18 @@ export function render() {
       <!-- Block 1: Dark (Gochujang) — origin story -->
       <div class="heritage__block heritage__block--dark">
         <div class="heritage__image-col" data-parallax="image">
-          <div class="heritage__image-grad" aria-hidden="true"></div>
+          <img
+            class="heritage__image"
+            src="/src/assets/images/heritage-1.jpg"
+            alt="Dark moody cherry photography — editorial lighting"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="heritage__image-scrim heritage__image-scrim--dark"></div>
         </div>
 
         <div class="heritage__text-col" data-parallax="text">
-          <p class="heritage__section-label t-mono reveal-fade s-0">
-            01 — Origin
-          </p>
+          <p class="heritage__section-label t-mono reveal-fade s-0">01 — Origin</p>
 
           <h2 class="heritage__heading t-display reveal-clip s-1">
             Born in<br>Darkness.
@@ -78,13 +79,18 @@ export function render() {
       <!-- Block 2: Light (Varden) — craft process -->
       <div class="heritage__block heritage__block--light heritage__block--reversed">
         <div class="heritage__image-col" data-parallax="image">
-          <div class="heritage__image-grad heritage__image-grad--light" aria-hidden="true"></div>
+          <img
+            class="heritage__image"
+            src="/src/assets/images/heritage-2.jpg"
+            alt="Mountain landscape — the mineral spring source"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="heritage__image-scrim heritage__image-scrim--light"></div>
         </div>
 
         <div class="heritage__text-col" data-parallax="text">
-          <p class="heritage__section-label t-mono c-gochujang reveal-fade s-0">
-            02 — Process
-          </p>
+          <p class="heritage__section-label t-mono c-gochujang reveal-fade s-0">02 — Process</p>
 
           <h2 class="heritage__heading t-display c-noir heritage__heading--bleed reveal-clip s-1">
             The Art of<br>Restraint.
