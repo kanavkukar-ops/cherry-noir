@@ -1,0 +1,126 @@
+/* ═══════════════════════════════════════════════════════
+   CHERRY NOIR — Animation System
+   Clip-path reveals, stagger classes, and keyframes.
+   Every animation must serve the story, not decorate it.
+═══════════════════════════════════════════════════════ */
+
+/* ─── Keyframes ───────────────────────────────────────── */
+
+/* Editorial clip-path reveal — cleaner than translateY */
+@keyframes revealUp {
+  from { clip-path: inset(100% 0 0 0); }
+  to   { clip-path: inset(0% 0 0 0); }
+}
+
+@keyframes revealDown {
+  from { clip-path: inset(0 0 100% 0); }
+  to   { clip-path: inset(0 0 0% 0); }
+}
+
+@keyframes revealLeft {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Ambient glow pulse on hero can */
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: translate(-50%, -50%) scale(1.09);
+  }
+}
+
+/* Underline reveal on hover (merch CTAs) */
+@keyframes underlineReveal {
+  from { transform: scaleX(0); transform-origin: left center; }
+  to   { transform: scaleX(1); transform-origin: left center; }
+}
+
+/* Border shimmer (CTA button hover fill) */
+@keyframes fillFromLeft {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+/* Timeline events build-in */
+@keyframes dotAppear {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* Navbar backdrop blur in */
+@keyframes navSlideDown {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+
+/* ─── Utility Animation Classes ───────────────────────── */
+
+.reveal-clip {
+  clip-path: inset(100% 0 0 0);
+  will-change: clip-path;
+}
+.reveal-clip.is-visible {
+  animation: revealUp 1.3s var(--ease-out-expo) forwards;
+}
+
+.reveal-fade {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+.reveal-fade.is-visible {
+  animation: fadeUp 0.9s var(--ease-out-expo) forwards;
+}
+
+/* ─── Stagger Delays ──────────────────────────────────── */
+.s-0  { animation-delay: 0ms; }
+.s-1  { animation-delay: 80ms; }
+.s-2  { animation-delay: 160ms; }
+.s-3  { animation-delay: 240ms; }
+.s-4  { animation-delay: 320ms; }
+.s-5  { animation-delay: 400ms; }
+.s-6  { animation-delay: 480ms; }
+.s-7  { animation-delay: 560ms; }
+
+/* ─── Reduced Motion Overrides ───────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-clip,
+  .reveal-clip.is-visible {
+    clip-path: none !important;
+    animation: fadeIn 0.5s ease forwards !important;
+  }
+
+  .reveal-fade,
+  .reveal-fade.is-visible {
+    animation: fadeIn 0.5s ease forwards !important;
+    transform: none !important;
+  }
+
+  [data-gsap],
+  .hero-can__svg,
+  .flavour-card__can {
+    animation: none !important;
+    transform: none !important;
+    transition: opacity 0.3s ease !important;
+  }
+}

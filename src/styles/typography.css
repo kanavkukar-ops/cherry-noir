@@ -1,0 +1,97 @@
+/* ═══════════════════════════════════════════════════════
+   CHERRY NOIR — Typography System
+═══════════════════════════════════════════════════════ */
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--varden);
+  background-color: var(--noir);
+  overflow-x: hidden;
+}
+
+/* ─── Display / Editorial ─────────────────────────────── */
+.t-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 0.88;
+}
+
+.t-display-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 0.88;
+}
+
+/* ─── Sub-headlines ──────────────────────────────────── */
+.t-sub {
+  font-family: var(--font-sub);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+/* ─── Body ───────────────────────────────────────────── */
+.t-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* ─── Mono / Accent ──────────────────────────────────── */
+.t-mono {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.t-mono-xs {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* ─── Pull Quote ─────────────────────────────────────── */
+.t-pull {
+  font-family: var(--font-sub);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 3.25rem);
+  color: var(--crimson);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Size utilities ─────────────────────────────────── */
+.t-hero    { font-size: var(--text-fluid-hero); }
+.t-section { font-size: var(--text-fluid-section); }
+.t-card    { font-size: var(--text-fluid-card); }
+.t-5xl     { font-size: var(--text-5xl); }
+.t-4xl     { font-size: var(--text-4xl); }
+.t-3xl     { font-size: var(--text-3xl); }
+.t-2xl     { font-size: var(--text-2xl); }
+.t-xl      { font-size: var(--text-xl); }
+.t-lg      { font-size: var(--text-lg); }
+.t-base    { font-size: var(--text-base); }
+.t-sm      { font-size: var(--text-sm); }
+.t-xs      { font-size: var(--text-xs); }
+
+/* ─── Colour utilities ───────────────────────────────── */
+.c-noir      { color: var(--noir); }
+.c-varden    { color: var(--varden); }
+.c-crimson   { color: var(--crimson); }
+.c-marble    { color: var(--marble); }
+.c-gochujang { color: var(--gochujang); }
+.c-cosmos    { color: var(--cosmos); }

@@ -1,0 +1,90 @@
+/* ═══════════════════════════════════════════════════════
+   CHERRY NOIR — Design Tokens
+   All CSS custom properties live here. Zero hardcoded
+   hex values anywhere else in the codebase.
+═══════════════════════════════════════════════════════ */
+
+:root {
+  /* ─── Brand Palette ──────────────────────────────────── */
+  --noir:        #1A0A0A;
+  --gochujang:   #780000;
+  --crimson:     #C1121F;
+  --varden:      #FFF1D0;
+  --cosmos:      #003049;
+  --marble:      #669BBC;
+  --cherry-silk: #6B1A2A;
+
+  /* Derived tints for overlays / borders */
+  --crimson-10:  rgba(193, 18,  31,  0.10);
+  --crimson-20:  rgba(193, 18,  31,  0.20);
+  --crimson-40:  rgba(193, 18,  31,  0.40);
+  --varden-10:   rgba(255, 241, 208, 0.10);
+  --varden-20:   rgba(255, 241, 208, 0.20);
+  --varden-60:   rgba(255, 241, 208, 0.60);
+  --noir-80:     rgba(26,  10,  10,  0.80);
+
+  /* ─── Typography Stacks ──────────────────────────────── */
+  --font-display: 'Cormorant Garamond', 'Garamond', 'Georgia', serif;
+  --font-sub:     'Clash Display', 'Helvetica Neue', sans-serif;
+  --font-body:    'Neue Montreal', 'Helvetica Neue', sans-serif;
+  --font-mono:    'Syne Mono', 'Courier New', monospace;
+
+  /* ─── Fluid Type Scale ───────────────────────────────── */
+  --text-2xs:        0.625rem;
+  --text-xs:         0.75rem;
+  --text-sm:         0.875rem;
+  --text-base:       1rem;
+  --text-lg:         1.125rem;
+  --text-xl:         1.25rem;
+  --text-2xl:        1.5rem;
+  --text-3xl:        2rem;
+  --text-4xl:        2.5rem;
+  --text-5xl:        3.5rem;
+  --text-6xl:        5rem;
+  --text-7xl:        7rem;
+  --text-fluid-hero:    clamp(4.5rem, 10vw, 11rem);
+  --text-fluid-section: clamp(3rem, 6vw, 7.5rem);
+  --text-fluid-card:    clamp(2.25rem, 4vw, 5rem);
+
+  /* ─── Spacing Scale ──────────────────────────────────── */
+  --sp-1:   0.25rem;
+  --sp-2:   0.5rem;
+  --sp-3:   0.75rem;
+  --sp-4:   1rem;
+  --sp-6:   1.5rem;
+  --sp-8:   2rem;
+  --sp-10:  2.5rem;
+  --sp-12:  3rem;
+  --sp-16:  4rem;
+  --sp-20:  5rem;
+  --sp-24:  6rem;
+  --sp-32:  8rem;
+  --sp-40:  10rem;
+  --sp-48:  12rem;
+
+  /* ─── Layout ─────────────────────────────────────────── */
+  --container-max:    1440px;
+  --container-gutter: clamp(1.5rem, 5vw, 7rem);
+
+  /* ─── Easing Curves ──────────────────────────────────── */
+  --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-expo:    cubic-bezier(0.7,  0, 0.84, 0);
+  --ease-spring:     cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-in-out:     cubic-bezier(0.37, 0, 0.63, 1);
+
+  /* ─── Transitions ────────────────────────────────────── */
+  --dur-fast:    150ms;
+  --dur-normal:  400ms;
+  --dur-slow:    700ms;
+  --dur-slower:  1100ms;
+
+  /* ─── Z-Index ────────────────────────────────────────── */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-nav:     300;
+
+  /* ─── Interactive State (Explorer) ───────────────────── */
+  --explorer-bg-tint: rgba(26, 10, 10, 0);
+  --explorer-can-hue: 0deg;
+}
